@@ -11,13 +11,12 @@ document.getElementById("feedbackForm").addEventListener("submit",(event)=>{
         alert("Please fill out all fields before submitting.")
     } else {
         //Display submitted feedback if submitted correctly.
+        //Add formatting to displyed text.
         document.getElementById("feedbackSummary").innerHTML =`
-        <p>
-        Name: ${name}
-        <p>
-        Rating: ${rating}
-        <p>
-        Comments: ${comments}
+        <h3>Review Feedback:</h3><p>
+        <strong> Name:</strong> ${name}<p>
+        <strong> Rating:</strong> ${rating}<p>
+        <strong> Comments:</strong> ${comments}
         `
     };
 });
